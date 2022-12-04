@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <script src="https://kit.fontawesome.com/c5cf47d4d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -13,40 +18,55 @@
     <div class="container">
         <div class="sidebar">
             <div class="logo">
-                <img src="" alt="Logo">
+                <img src="./images/Zelda.png" alt="Logo">
                 <h1>Dashboard</h1>
             </div>
             <ul class="nav">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li>
+                    
+                    <a href=""><i class="fa-solid fa-house fa-fw"></i>Home</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-address-card fa-fw"></i>Profile</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-message fa-flip-horizontal fa-fw"></i>Messages</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-clock-rotate-left fa-fw"></i>History</a>
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-copy fa-fw"></i>Tasks</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-users fa-fw"></i>Communities</a>
+                </li>
             </ul>
             <ul class="settings">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><a href=""><i class="fa-solid fa-gear fa-fw"></i>Settings</a></li>
+                <li><a href=""><i class="fas fa-question fa-fw"></i>Support</a></li>
+                <li><a href=""><i class="fas fa-shield fa-fw"></i>Privacy</a></li>
             </ul>
         </div>
         <div class="header">
             <div class="header-top">
-                <div class="search"></div>
+                <input type="search" class="search" placeholder="Search..."><i class="fas fa-search"></i></input>
                 <div class="user-items">
-                    <div class="notifications"></div>
-                    <img src="" alt="" class="avatar">
+                    <i class="fas fa-bell"></i>
+                    <img src="https://i.pravatar.cc/50" alt="avatar" class="avatar">
                     <h3 class="user-name">Dominik Mlodzieniak</h3>
                 </div>
             </div>
             <div class="header-bottom">
                 <div class="user-info">
-                    <img src="" alt="" class="avatar">
-                    <p>Hi there,</p>
-                    <h2 class="user-name">Dominik Mlodzieniak</h2>
-                    <h2 class="user-tag">young</h2>
+                    <img src="https://i.pravatar.cc/50" alt="avatar" class="avatar">
+                    <div class="user-wrapper">
+                        <p>Hi there,</p>
+                        <h2 class="user-name">Dominik Mlodzieniak</h2>
+                        <h2 class="user-tag">young</h2>
+                    </div>
                 </div>
-                <div class="actions"> 
+                <div class="actions">
                     <button type="button">New</button>
                     <button type="button">Upload</button>
                     <button type="button">Share</button>
@@ -54,7 +74,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="projetcts">
+            <div class="projects">
                 <div class="project1">
                     <p3>project1</p3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit reiciendis mollitia
@@ -115,19 +135,19 @@
             <div class="trending">
                 <ul class="users">
                     <li>
-                        <img src="" alt="">
+                        <img src="https://i.pravatar.cc/50" alt="avatar" class="avatar">
                         <h5 class="user-tag">tegan</h5>
                         <p class="status">Best league player EU</p>
                     </li>
-                    <li><img src="" alt="">
+                    <li><img src="https://i.pravatar.cc/50" alt="avatar" class="avatar">
                         <h5 class="user-tag">morgan</h5>
                         <p class="status">Building my own house</p>
                     </li>
-                    <li><img src="" alt="">
+                    <li><img src="https://i.pravatar.cc/50" alt="avatar" class="avatar">
                         <h5 class="user-tag">kendall</h5>
                         <p class="status">Driving all day</p>
                     </li>
-                    <li><img src="" alt="">
+                    <li><img src="https://i.pravatar.cc/50" alt="avatar" class="avatar">
                         <h5 class="user-tag">alex</h5>
                         <p class="status">Life chaniging app</p>
                     </li>

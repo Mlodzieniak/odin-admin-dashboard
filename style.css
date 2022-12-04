@@ -15,7 +15,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'Anek Devanagari', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -40,4 +40,113 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+:root{
+	/* COLOR PALLET */
+	--sidebar-bg-color: #000;
+	--header-bg-color: #fed7aa;
+	--content-bg-color: #faf5ff;
+}
+.avatar{
+	border-radius: 50%;
+}
+
+.container{
+	display: grid;
+	grid-template-areas: 
+	"sidebar header"
+	"sidebar content";
+	/* grid-template-columns: clamp(150px, 20%, 250px) 5fr; */
+	grid-template-columns: max-content 5fr;
+	grid-template-rows: 1fr 5fr;
+	height: 100vh;
+}
+.header{
+	grid-area: header;
+	background-color: var(--header-bg-color);
+	padding: 1rem;
+	
+}
+.header-top{
+	display: flex;
+	align-items: flex-start;
+}
+.search{
+	flex: 2;
+}
+.user-items{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	gap: 0.5rem;
+}
+.header-bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.user-info{
+	display: flex;
+}
+button{
+	background-color: #000;
+	color: #fff;
+	font-weight: 700;
+	border: none;
+	border-radius: 1rem;
+	padding: 0.5rem 2rem;
+}
+.sidebar{
+	grid-area: sidebar;
+	background-color: var(--sidebar-bg-color);
+	color: #fff;
+	font-size: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	padding: 1rem;
+}
+
+ul.nav>li{
+display: flex;
+align-items: baseline;
+}
+ul.nav>li>img{
+	width: 20%;
+}
+.logo{
+	display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+.logo *{
+width: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.content{
+	/* background: url(./images/circuit-board.svg); */
+	background-color: var(--content-bg-color);
+	grid-area: content;
+	display: grid;
+	grid-template-areas: 
+	"projects announcements"
+	"projects trending";
+}
+.projects{
+	grid-area: projects;
+}
+.anno{
+	grid-area: announcements;
+}
+.trending{
+	grid-area: trending;
 }
